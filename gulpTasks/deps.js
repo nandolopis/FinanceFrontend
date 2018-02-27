@@ -31,7 +31,7 @@ gulp.task('deps.css', () => {
 
     ])
     .pipe(uglifycss({"uglyComments": true}))
-    .pipe(concat('deps.min.js'))
+    .pipe(concat('deps.min.css'))
     .pipe(gulp.dest('public/assets/css'))
 
 
