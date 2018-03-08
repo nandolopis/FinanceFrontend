@@ -5,9 +5,10 @@ angular.module('primeiraApp').component('valueBox', {
         value: '@',
         text: '@',
         iconClass: '@',
+        
     },
     controller: [
-        'gridSystem',
+       'gridSystem',
         function(gridSystem){
             this.gridClasses = gridSystem.toCssClasses(this.grid)
         }
@@ -26,3 +27,4 @@ angular.module('primeiraApp').component('valueBox', {
     </div>
     `
 })
+
